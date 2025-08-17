@@ -3,11 +3,11 @@ const checkBtn = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
 checkBtn.addEventListener("click", () => {
-  palindrome = textInput.value.trim().replace(/[^A-Za-z0-9]/g, "").toLowerCase().split("").reverse().join("");
-  sentPali = palindrome.split(" ").join("");
-  paliFilter = textInput.value.trim().replace(/[^A-Za-z0-9]/g, "").toLowerCase().split("").join("");
-  sentFilt = paliFilter.split(" ").join("");
-  paliArrSingle = textInput.value.trim().replace(/[^A-Za-z0-9]/g, "").toLowerCase().split("").length === 1;
+  const palindrome = textInput.value.trim().replace(/[^A-Za-z0-9]/g, "").toLowerCase().split("").reverse().join("");
+  const sentPali = palindrome.split(" ").join("");
+  const paliFilter = textInput.value.trim().replace(/[^A-Za-z0-9]/g, "").toLowerCase().split("").join("");
+  const sentFilt = paliFilter.split(" ").join("");
+  const paliArrSingle = textInput.value.trim().replace(/[^A-Za-z0-9]/g, "").toLowerCase().split("").length === 1;
 
   if (textInput.value === "") {
     alert("Please input a value")
